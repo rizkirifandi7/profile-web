@@ -19,8 +19,8 @@ const Header = () => {
 					</Link>
 				</div>
 				<div
-					className={`md:flex gap-8 text-title font-semibold text-small ${
-						isOpen ? "block flex flex-col absolute right-4 top-20 p-4 bg-white rounded shadow-lg" : "hidden"
+					className={`md:flex gap-4 md:gap-8 text-title font-semibold text-small ${
+						isOpen ? "flex flex-col justify-center items-center absolute left-0 top-[68px] p-4 bg-white rounded shadow-lg w-full" : "hidden"
 					}`}
 				>
 					<Link
