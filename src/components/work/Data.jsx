@@ -51,7 +51,7 @@ export const projectsData = [
 		link: "https://just-ramen.000webhostapp.com/",
 	},
 	{
-		id: 6,
+		id: 7,
 		image: Work7,
 		title: "Open Map",
 		category: "web",

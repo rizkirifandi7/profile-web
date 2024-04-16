@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
+
 const Header = () => {
 	const [active, setActive] = useState("#home");
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleDropdown = () => setIsOpen(!isOpen);
 
 	return (
 		<nav className="w-full z-20 bg-body border fixed top-0">
@@ -12,7 +18,11 @@ const Header = () => {
 						Rizki Rifani
 					</Link>
 				</div>
-				<div className="md:flex gap-8 text-title font-semibold text-small hidden">
+				<div
+					className={`md:flex gap-8 text-title font-semibold text-small ${
+						isOpen ? "block flex flex-col absolute right-4 top-20 p-4 bg-white rounded shadow-lg" : "hidden"
+					}`}
+				>
 					<Link
 						to="home"
 						offset={-200}
@@ -61,6 +71,9 @@ const Header = () => {
 					>
 						Contact
 					</Link>
+				</div>
+				<div className="md:hidden" onClick={toggleDropdown}>
+					{isOpen ? <IoClose className="text-2xl font-semibold"/> : <RxHamburgerMenu className="text-2xl font-semibold"/>}
 				</div>
 			</div>
 		</nav>

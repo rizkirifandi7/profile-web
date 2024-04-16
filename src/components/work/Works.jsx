@@ -41,7 +41,7 @@ const Works = () => {
 				})}
 			</div>
 
-			<div className="grid grid-cols-twomax gap-12 mx-auto justify-center items-center ">
+			<div className="flex flex-col md:grid md:grid-cols-twomax gap-6 md:gap-12 mx-4 md:mx-auto justify-center items-center">
 				{projects.map((item) => {
 					return <WorksItems item={item} key={item.id} />;
 				})}

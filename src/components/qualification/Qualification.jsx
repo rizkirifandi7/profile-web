@@ -11,13 +11,13 @@ const Qualification = () => {
 	};
 
 	return (
-		<section className="max-w-container mx-auto p-4 my-56 w-full" id="qualification">
+		<section className="max-w-container mx-auto p-4 my-56 w-full" id="qualification" data-aos="fade-right">
 			<div className="flex justify-center items-center flex-col mb-16">
 				<h1 className="text-title text-h1 font-semibold">Qualification</h1>
 				<p className="text-normal text-text">My personal journey</p>
 			</div>
 
-			<div className="max-w-[768px] mx-auto">
+			<div className="max-w-[768px] md:mx-6">
 				<div className="flex justify-center gap-8 mb-8">
 					<div
 						className={toggleState === 1 ? "font-semibold text-h3" : "font-medium text-h3"}
@@ -40,10 +40,10 @@ const Qualification = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-custom justify-center ">
+				<div className="grid grid-cols-initial md:grid-cols-custom justify-center mx-4">
 					<div className={toggleState === 1 ? "block" : "hidden"}>
 						{/* Kesatu */}
-						<div className="grid gap-6 grid-cols-onefr">
+						<div className="grid gap-2 sm:gap-6 md:gap-6 grid-cols-onefr">
 							<div>
 								<h3 className="text-base font-medium text-title">Natural Sciences Major</h3>
 								<span className="text-sm mb-4 inline-block text-text">Indonesia - High School 21 Bandung</span>
@@ -59,7 +59,7 @@ const Qualification = () => {
 						</div>
 
 						{/* Kedua */}
-						<div className="grid gap-6 grid-cols-onefr">
+						<div className="grid gap-2 sm:gap-6 md:gap-6 grid-cols-onefr">
 							<div></div>
 
 							<div>

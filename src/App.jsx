@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -8,7 +12,15 @@ import Service from "./components/serve/Service";
 import Skills from "./components/skills/Skills";
 import Work from "./components/work/Work";
 
+
 function App() {
+	useEffect(() => {
+		AOS.init({
+			duration: 1000,
+			once: true,
+		});
+	}, []);
+
 	return (
 		<>
 			<Header />
@@ -19,8 +31,8 @@ function App() {
 				<Service />
 				<Qualification />
 				<Work />
-				<Contact/>
-				<Footer/>
+				<Contact />
+				<Footer />
 			</div>
 		</>
 	);

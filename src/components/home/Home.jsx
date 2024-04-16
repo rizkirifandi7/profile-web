@@ -1,35 +1,19 @@
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import DataHome from "./DataHome";
+import SocialHome from "./SocialHome";
 
 const Home = () => {
 	return (
-		<section className="max-w-container mx-auto mt-40 p-4 w-full" id="home">
-			<div className="flex flex-col-reverse md:flex-row items-center gap-8">
-				<div className="basis-1/12 me-6">
-					<div className="flex relative left-12 bottom-16  md:flex-col my-auto items-start gap-6 text-2xl text-title">
-						<a href="">
-							<FiInstagram />
-						</a>
-						<a href="">
-							<FiLinkedin />
-						</a>
-						<a href="">
-							<FiGithub />
-						</a>
+		<section className="md:max-w-container mx-auto mt-24 md:mt-40 p-10 md:p-4 w-full" id="home"  data-aos="fade-right">
+			<div className="grid gap-28 mx-auto">
+				<div className="grid sm:grid-cols-customthree md:grid-cols-twocontent md:pt-14 lg:grid-cols-twocontent gap-8 items-center">
+					
+					<SocialHome className="hidden"/>
+
+					<div className="flex justify-center item md:order-1">
+						<div className="bg-profile bg-no-repeat bg-center bg-cover bg-gray-900 shadow-profile  w-[200px] h-[200px] md:w-[300px] md:h-[300px] animate-profile"></div>
 					</div>
-				</div>
-				<div className="basis-5/12 flex flex-col gap-2">
-					<h1 className="text-big font-semibold text-title">Rizki Rifani</h1>
-					<h3 className="text-h3 font-normal text-title">Web Developer</h3>
-					<p className="text-normal font-normal text-text">
-						Undergraduate informatics engineering student. Detailed-oriented, responsible, and passionate with expertise
-						in Web Developer.
-					</p>
-					<div className="mt-6">
-						<button className="bg-title px-6 py-3 rounded-md text-white hover:bg-titletwo">Say Hello!</button>
-					</div>
-				</div>
-				<div className="basis-5/12 flex items-end justify-end">
-					<div className="bg-profile bg-no-repeat bg-center bg-cover bg-gray-900 shadow-profile order-1 self-center w-80 h-80 animate-profile"></div>
+
+					<DataHome />
 				</div>
 			</div>
 		</section>

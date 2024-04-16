@@ -4,9 +4,16 @@ export default {
 	theme: {
 		extend: {
 			gridTemplateColumns: {
-				custom: ".5fr",
+				customthree: "0.5fr 3fr",
+				custom: "0.5fr",
 				onefr: "1fr max-content 1fr",
 				twomax: "repeat(2, max-content)",
+				twocontent: "116px repeat(2, 1fr)",
+				maxcontent: "max-content",
+				initial: 'initial',
+			},
+			gridColumn: {
+				onethree: "1/3",
 			},
 			colors: {
 				title: "hsl(0, 0%, 20%)",
