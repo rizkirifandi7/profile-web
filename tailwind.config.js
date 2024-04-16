@@ -11,6 +11,8 @@ export default {
 				twocontent: "116px repeat(2, 1fr)",
 				maxcontent: "max-content",
 				initial: 'initial',
+				three: "repeat(3, 140px)",
+				threeonefr: "repeat(3, 1fr)",
 			},
 			gridColumn: {
 				onethree: "1/3",
@@ -58,6 +60,10 @@ export default {
 					"100%": { borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%" },
 				},
 			},
+			padding:{
+				"box-large": "1rem 1.25rem",
+				"box-small": "0.75rem 0 0.5rem",
+			}
 		},
 	},
 	plugins: [],

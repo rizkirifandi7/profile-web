@@ -24,7 +24,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<div className="h-screen bg-body">
+			<div className="bg-body">
 				<Home />
 				<About />
 				<Skills />

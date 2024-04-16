@@ -74,7 +74,7 @@ const Skills = () => {
 				</div>
 				<div className="bg-white py-8 px-16 rounded-2xl border w-full md:w-fit" >
 					<p className="text-center mb-6 font-medium text-base">Backend Developer</p>
-					<div className="flex gap-10">
+					<div className="flex justify-center gap-10">
 						<div className="flex flex-col gap-5">
 							<div className="flex gap-3">
 								<i className="mt-1">

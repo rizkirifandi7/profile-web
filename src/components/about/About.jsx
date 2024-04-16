@@ -1,6 +1,5 @@
-import { FiAward } from "react-icons/fi";
-import { MdOutlineWorkOutline } from "react-icons/md";
-import { BiSupport } from "react-icons/bi";
+import BoxContent from "./BoxContent";
+
 
 const About = () => {
 	return (
@@ -14,30 +13,8 @@ const About = () => {
 					<img src="/fotoprofile.png" alt="" className="w-[250px] md:w-[350px] md:h-[320px] rounded-2xl" />
 				</div>
 				<div className="flex flex-col justify-center basis-6/12 md:gap-2 mt-8 md:mt-0">
-					<div className="flex flex-row gap-2 md:gap-4 items-center">
-						<div className="flex flex-col justify-center items-center border px-3 py-4 md:px-5 rounded-xl gap-2 bg-white w-full">
-							<p className="text-2xl">
-								<FiAward />
-							</p>
-							<h3 className="text-sm font-semibold">Experience</h3>
-							<p className="text-xs text-text">2 Years</p>
-						</div>
-						<div className="flex flex-col justify-center items-center border px-3 py-4 md:px-5 rounded-xl gap-2 bg-white w-full">
-							<p className="text-2xl">
-								<MdOutlineWorkOutline />
-							</p>
-							<h3 className="text-sm font-semibold">Completed</h3>
-							<p className="text-xs text-text">10+ Projects</p>
-						</div>
-						<div className="flex flex-col justify-center items-center border px-3 py-4 md:px-5 rounded-xl gap-2 bg-white w-full	">
-							<p className="text-2xl">
-								<BiSupport />
-							</p>
-							<h3 className="text-sm font-semibold">Support</h3>
-							<p className="text-xs text-text">Online 12/7</p>
-						</div>
-					</div>
-					<p className="py-6 text-text text-center md:text-left">
+					<BoxContent />
+					<p className="py-5 text-text text-center md:text-left">
 						Undergraduate informatics engineering student. Detailed-oriented, responsible, and passionate with expertise
 						in Web Developer.
 					</p>
