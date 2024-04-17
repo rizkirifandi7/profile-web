@@ -3,77 +3,66 @@ import { Link } from "react-scroll";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { ImSun } from "react-icons/im";
+
+import { useContext } from "react";
+import { DarkModeContext } from "../../useContext/DarkModeContext";
 
 const Header = () => {
-	const [active, setActive] = useState("#home");
+	const [active, setActive] = useState("home");
 	const [isOpen, setIsOpen] = useState(false);
+	const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
 	const toggleDropdown = () => setIsOpen(!isOpen);
 
+	const NavbarMenu = [
+		{ title: "Home", href: "home" },
+		{ title: "About", href: "about" },
+		{ title: "Skills", href: "skills" },
+		{ title: "Services", href: "services" },
+		{ title: "Portfolio", href: "portfolio" },
+		{ title: "Contact", href: "contact" },
+	];
+
 	return (
-		<nav className="w-full z-20 bg-body border fixed top-0">
-			<div className="max-w-container mx-auto flex justify-between items-center h-16 px-4">
-				<div className="text-title font-semibold cursor-pointer">
-					<Link to="home" offset={-200} onClick={() => setActive("#home")}>
+		<nav className="w-full z-20 bg-body dark:bg-surface-100 fixed top-0">
+			<div className="max-w-container mx-auto flex justify-between items-center h-16 px-4 dark:border-b-2">
+				<div className="text-title dark:text-white font-semibold cursor-pointer">
+					<Link to="home" offset={-200} onClick={() => setActive("home")}>
 						Rizki Rifani
 					</Link>
 				</div>
 				<div
-					className={`md:flex gap-4 md:gap-8 text-title font-semibold text-small ${
-						isOpen ? "flex flex-col justify-center items-center absolute left-0 top-[68px] p-4 bg-white rounded shadow-lg w-full" : "hidden"
+					className={`md:flex gap-4 md:gap-8 text-title dark:text-white font-semibold text-small ${
+						isOpen
+							? "flex flex-col justify-center items-center absolute top-[63px] dark:top-[64px] p-4 bg-body dark:bg-black rounded  w-full"
+							: "hidden"
 					}`}
 				>
-					<Link
-						to="home"
-						offset={-200}
-						onClick={() => setActive("#home")}
-						className={`${active === "#home" ? "font-bold text-black" : ""} cursor-pointer`}
-					>
-						Home
-					</Link>
-					<Link
-						to="about"
-						offset={-100}
-						onClick={() => setActive("#about")}
-						className={`${active === "#about" ? "font-bold text-black" : ""} cursor-pointer`}
-					>
-						About
-					</Link>
-					<Link
-						to="skills"
-						offset={-100}
-						onClick={() => setActive("#skills")}
-						className={`${active === "#skills" ? "font-bold text-black" : ""} cursor-pointer`}
-					>
-						Skills
-					</Link>
-					<Link
-						to="services"
-						offset={-100}
-						onClick={() => setActive("#services")}
-						className={`${active === "#services" ? "font-bold text-black" : ""} cursor-pointer`}
-					>
-						Services
-					</Link>
-					<Link
-						to="portfolio"
-						offset={-100}
-						onClick={() => setActive("#portfolio")}
-						className={`${active === "#portfolio" ? "font-bold text-black" : ""} cursor-pointer`}
-					>
-						Portfolio
-					</Link>
-					<Link
-						to="contact"
-						offset={-100}
-						onClick={() => setActive("#contact")}
-						className={`${active === "#contact" ? "font-bold text-black" : ""} cursor-pointer`}
-					>
-						Contact
-					</Link>
+					{NavbarMenu.map((menu, index) => {
+						return (
+							<Link
+								to={menu.href}
+								offset={-100}
+								onClick={() => setActive(menu.href)}
+								className={`${active === menu.href ? "font-bold text-black dark:text-white" : ""} cursor-pointer`}
+								key={index}
+							>
+								{menu.title}
+							</Link>
+						);
+					})}
+					<button onClick={toggleDarkMode} className="text-lg hover:bg-gray-200 rounded-md">
+						{darkMode ? <ImSun className="text-white" /> : <BsFillMoonStarsFill />}
+					</button>
 				</div>
 				<div className="md:hidden" onClick={toggleDropdown}>
-					{isOpen ? <IoClose className="text-2xl font-semibold"/> : <RxHamburgerMenu className="text-2xl font-semibold"/>}
+					{isOpen ? (
+						<IoClose className="text-2xl font-semibold dark:text-white" />
+					) : (
+						<RxHamburgerMenu className="text-2xl font-semibold dark:text-white" />
+					)}
 				</div>
 			</div>
 		</nav>

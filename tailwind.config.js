@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+	darkMode: "class",
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
@@ -10,7 +11,7 @@ export default {
 				twomax: "repeat(2, max-content)",
 				twocontent: "116px repeat(2, 1fr)",
 				maxcontent: "max-content",
-				initial: 'initial',
+				initial: "initial",
 				three: "repeat(3, 140px)",
 				threeonefr: "repeat(3, 1fr)",
 			},
@@ -24,6 +25,13 @@ export default {
 				text: "hsl(0, 0%, 46%)",
 				body: "hsl(0, 0%, 98%)",
 				container: "#fff",
+				"surface-100": "#121212",
+				"surface-200": "#282828",
+				"surface-300": "#3f3f3f",
+				"surface-400": "#575757",
+				"surface-500": "#717171",
+				"surface-600": "#8b8b8b",
+				"title-white": "#EEEEEE",
 			},
 			maxWidth: {
 				container: "968px",
@@ -60,10 +68,10 @@ export default {
 					"100%": { borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%" },
 				},
 			},
-			padding:{
+			padding: {
 				"box-large": "1rem 1.25rem",
 				"box-small": "0.75rem 0 0.5rem",
-			}
+			},
 		},
 	},
 	plugins: [],

@@ -32,7 +32,7 @@ const Works = () => {
 							onClick={(e) => {
 								handleClick(e, index);
 							}}
-							className={`${active === index ? "bg-title text-white" : ''} cursor-pointer text-title font-semibold text-base px-3 py-2 capitalize rounded-md hover:bg-title hover:text-white transition duration-300 ease-in-out`}
+							className={`${active === index ? "bg-title text-white" : ''} cursor-pointer text-title dark:text-title-white font-semibold text-base px-3 py-2 capitalize rounded-md hover:bg-title hover:text-white transition duration-300 ease-in-out`}
 							key={index}
 						>
 							{item.name}

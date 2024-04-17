@@ -4,7 +4,7 @@ import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 const SocialHome = ({ className }) => {
 	return (
 		<div
-			className={`flex flex-row md:grid md:grid-cols-maxcontent gap-6 text-2xl text-title order-3 md:order-[-1] ${className}`}
+			className={`flex flex-row md:grid md:grid-cols-maxcontent gap-6 text-2xl text-title dark:text-title-white order-3 md:order-[-1] ${className}`}
 		>
 			<a href="https://www.instagram.com/rizki.rifandii/">
 				<FiInstagram />

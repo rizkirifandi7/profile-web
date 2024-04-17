@@ -3,9 +3,9 @@ import { IoArrowForward } from "react-icons/io5";
 
 const WorksItems = ({ item }) => {
 	return (
-		<div className="bg-white border p-5 rounded-2xl w-full md:w-fit" key={item.id}>
+		<div className="bg-white dark:bg-black border dark:border-none p-5 rounded-2xl w-full md:w-fit" key={item.id}>
 			<img src={item.image} alt="" className="w-full md:w-[295px] h-[200px] rounded-2xl mb-4" />
-			<h3 className="text-base font-medium mb-2">{item.title}</h3>
+			<h3 className="text-base font-medium mb-2 dark:text-title-white">{item.title}</h3>
 			<a
 				href={item.link}
 				className="text-text text-sm flex items-center gap-1 hover:translate-x-1 transition-all .3s ease-in-out"
