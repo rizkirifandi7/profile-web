@@ -3,7 +3,7 @@ import SocialHome from "./SocialHome";
 
 const Home = () => {
 	return (
-		<section className="md:max-w-container mx-auto mt-24 md:mt-40 p-10 md:p-4 w-full" id="home"  data-aos="fade-right">
+		<section className="md:max-w-container mx-auto mt-24 md:mt-30 p-10 md:p-4 w-full" id="home"  data-aos="fade-right">
 			<div className="grid gap-28 mx-auto">
 				<div className="grid sm:grid-cols-customthree md:grid-cols-twocontent md:pt-14 lg:grid-cols-twocontent gap-8 items-center">
 					
