@@ -4,7 +4,7 @@ import FooterSocial from "./FooterSocial";
 const Footer = () => {
 	return (
 		<footer className="dark:bg-black dark:text-white bg-white border dark:border-none">
-			<div className="py-14 border-t-2">
+			<div className="py-14">
 				<h1 className="font-semibold text-3xl text-center mb-4">Rizki Rifani</h1>
 
 				<FooterMenu />

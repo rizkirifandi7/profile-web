@@ -27,7 +27,7 @@ const Header = () => {
 
 	return (
 		<nav className="w-full z-20 bg-body dark:bg-surface-100 fixed top-0">
-			<div className="max-w-container mx-auto flex justify-between items-center h-16 px-4 dark:border-b-2">
+			<div className="max-w-container mx-auto flex justify-between items-center h-16 px-4">
 				<div className="text-title dark:text-white font-semibold cursor-pointer">
 					<Link to="home" offset={-200} onClick={() => setActive("home")}>
 						Rizki Rifani
