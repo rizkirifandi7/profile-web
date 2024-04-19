@@ -7,8 +7,8 @@ const About = () => {
 		<section className="max-w-container mx-auto mt-56 w-full" id="about">
 			<Title maintitle={"About Me"} subtitle={"My Introduce"} />
 			<div className="flex flex-col md:gap-6 md:flex-row md:justify-around md:items-center px-8 md:px-0">
-				<div className="flex items-center justify-center basis-4/12">
-					<img src="/fotoprofile.png" alt="" className="w-[250px] md:w-[350px] md:h-[320px] rounded-2xl" />
+				<div className="flex items-center justify-center basis-4/12 w-[250px] md:w-[350px] md:h-[320px] ">
+					<img src="/fotoprofile.png" alt="" className="w-full h-full rounded-2xl" />
 				</div>
 				<div className="flex flex-col justify-center basis-6/12 md:gap-2 mt-8 md:mt-0 ">
 					<BoxContent />

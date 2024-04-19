@@ -8,8 +8,8 @@ const Home = () => {
 				<div className="grid sm:grid-cols-customthree md:grid-cols-twocontent md:pt-14 lg:grid-cols-twocontent gap-8 items-center">
 					<SocialHome className="hidden" />
 
-					<div className="flex justify-center item md:order-1">
-						<div className="bg-profile bg-no-repeat bg-center bg-cover bg-gray-900 shadow-profile  w-[200px] h-[200px] md:w-[300px] md:h-[300px] animate-profile"></div>
+					<div className="flex justify-center items-end md:order-1">
+						<div className="bg-profile bg-no-repeat bg-center bg-cover bg-gray-900 shadow-profile w-[200px] h-[200px] md:w-[300px] md:h-[300px] animate-profile"></div>
 					</div>
 
 					<DataHome />
