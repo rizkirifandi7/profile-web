@@ -27,16 +27,16 @@ const Header = () => {
 
 	return (
 		<nav className="w-full z-20 bg-body dark:bg-surface-100 fixed top-0">
-			<div className="max-w-container mx-auto flex justify-between items-center h-16 px-4">
-				<div className="text-title dark:text-white font-semibold cursor-pointer">
+			<div className="max-w-container mx-auto flex justify-between items-center md:px-4 h-16">
+				<div className="text-title dark:text-white font-semibold cursor-pointer md:pl-0 pl-4">
 					<Link to="home" offset={-200} onClick={() => setActive("home")}>
 						Rizki Rifani
 					</Link>
-				</div>
+				</div>		
 				<div
-					className={`md:flex gap-4 md:gap-8 text-title dark:text-white font-semibold text-small ${
+					className={`md:flex gap-4 md:gap-8 text-title dark:text-white font-semibold text-small justify-center items-center ${
 						isOpen
-							? "flex flex-col justify-center items-center absolute top-[63px] dark:top-[64px] p-4 bg-body dark:bg-black rounded  w-full"
+							? "flex flex-col justify-center items-center absolute top-[63px] dark:top-[64px] p-4 bg-body dark:bg-black w-full"
 							: "hidden"
 					}`}
 				>
@@ -53,11 +53,11 @@ const Header = () => {
 							</Link>
 						);
 					})}
-					<button onClick={toggleDarkMode} className="text-lg hover:bg-gray-200 rounded-md">
+					<button onClick={toggleDarkMode} className="text-lg hover:bg-gray-200 rounded-md p-2">
 						{darkMode ? <ImSun className="text-white" /> : <BsFillMoonStarsFill />}
 					</button>
 				</div>
-				<div className="md:hidden" onClick={toggleDropdown}>
+				<div className="md:hidden pr-4 md:pr-0" onClick={toggleDropdown}>
 					{isOpen ? (
 						<IoClose className="text-2xl font-semibold dark:text-white" />
 					) : (
