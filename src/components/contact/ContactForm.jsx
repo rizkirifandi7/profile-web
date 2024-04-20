@@ -38,7 +38,7 @@ const ContactForm = () => {
 					/>
 				</div>
 
-				<div className="relative mb-8 h-44">
+				<div className="relative mb-10 h-44">
 					<Label text={"Project"} />
 					<textarea
 						name="project"

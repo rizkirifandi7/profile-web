@@ -1,7 +1,10 @@
+import { Link } from "react-scroll";
+
 import Button from "../reusable_ui/Button";
 import SocialHome from "./SocialHome";
 
 const DataHome = () => {
+
 	return (
 		<div className="grid col-span-onethree text-center md:text-left">
 			<h1 className="font-semibold text-title dark:text-title-white text-4xl mb-6 md:text-big ">Rizki Rifani</h1>
@@ -11,7 +14,9 @@ const DataHome = () => {
 				Web Developer.
 			</p>
 			<div className="flex justify-center items-center md:justify-start gap-6">
-				<Button text={"Say Hello!"} />
+				<Link to="contact">
+					<Button text={"Say Hello!"} />
+				</Link>
 				<SocialHome className="md:hidden" />
 			</div>
 		</div>

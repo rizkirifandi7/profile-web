@@ -1,6 +1,6 @@
 const FooterMenu = () => {
 	return (
-		<div className="flex justify-center gap-6 mb-8 text-title  dark:text-title-white">
+		<div className="flex justify-center gap-6 my-8 text-title  dark:text-title-white">
 			<a href="#about" className="font-medium text-lg hover:text-black ">
 				About
 			</a>

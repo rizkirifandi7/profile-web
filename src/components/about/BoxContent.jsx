@@ -2,27 +2,27 @@ import { FiAward } from "react-icons/fi";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 
-const BoxContent = () => {
-	const data = [
-		{
-			icon: <FiAward />,
-			title: "Experience",
-			value: "2 Years",
-		},
-		{
-			icon: <MdOutlineWorkOutline />,
-			title: "Completed",
-			value: "10+ Projects",
-		},
-		{
-			icon: <BiSupport />,
-			title: "Support",
-			value: "Online 12/7",
-		},
-	];
+const data = [
+	{
+		icon: <FiAward />,
+		title: "Experience",
+		value: "2 Years",
+	},
+	{
+		icon: <MdOutlineWorkOutline />,
+		title: "Completed",
+		value: "10+ Projects",
+	},
+	{
+		icon: <BiSupport />,
+		title: "Support",
+		value: "Online 24/7",
+	},
+];
 
+const BoxContent = () => {
 	return (
-		<div className="grid  grid-cols-3 md:grid-cols-three justify-center md:justify-start gap-2 my-2 md:gap-4 items-center  ">
+		<div className="grid  grid-cols-3 md:grid-cols-three justify-center md:justify-start gap-2 md:gap-4 items-center  ">
 			{data.map((item, index) => {
 				return (
 					<div
