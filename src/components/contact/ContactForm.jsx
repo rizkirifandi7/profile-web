@@ -1,21 +1,40 @@
-import { useRef } from "react";
+/* eslint-disable react/prop-types */
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "../common/Button";
 import Label from "../common/Label";
+
+const SuccessMessage = ({ show }) => {
+	if (!show) return null;
+	return (
+		<div className="bg-green-100 p-4 rounded text-center w-full h-full mb-5 border">
+			<p>Message sent successfully!</p>
+		</div>
+	);
+};
 
 const ContactForm = () => {
 	const form = useRef();
+	const [showSuccess, setShowSuccess] = useState(false);
 
-	const sendEmail = (e) => {
+	const sendEmail = async (e) => {
 		e.preventDefault();
 
-		emailjs.sendForm("service_bg6oi4n", "template_gnadhbm", form.current, "X-ZemrM9dNqWz9C-F");
+		try {
+			await emailjs.sendForm("service_bg6oi4n", "template_gnadhbm", form.current, "X-ZemrM9dNqWz9C-F");
+			setShowSuccess(true);
+			setTimeout(() => setShowSuccess(false), 2000); // hide the message after 3 seconds
+		} catch (error) {
+			console.error("An error occurred while sending the message.", error);
+		}
+
 		e.target.reset();
 	};
 
 	return (
 		<div className="flex flex-col items-center">
 			<h3 className="text-center text-xl font-medium mb-6 dark:text-title-white">Write me your project</h3>
+
+			<SuccessMessage show={showSuccess} />
 
 			<form ref={form} onSubmit={sendEmail} className="w-full md:w-[360px]">
 				<div className="relative mb-8 h-16">
@@ -48,8 +67,9 @@ const ContactForm = () => {
 						placeholder="Write your project"
 					></textarea>
 				</div>
-
-				<Button text={"Send Message"} />
+				<button className="bg-title dark:bg-white dark:text-black dark:font-semibold px-6 py-3 cursor-pointer rounded-md text-white dark:hover:bg-slate-200 hover:bg-titletwo w-fit">
+					Send Message
+				</button>
 			</form>
 		</div>
 	);
