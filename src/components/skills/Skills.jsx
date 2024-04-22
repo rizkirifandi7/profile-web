@@ -1,4 +1,4 @@
-import Title from "../common-component/Heading";
+import Title from "../common/Title";
 import Backend from "./SkillsBackend";
 import Frontend from "./SkillsFrontend";
 

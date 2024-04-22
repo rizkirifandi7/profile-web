@@ -1,4 +1,4 @@
-import Button from "../common-component/Button";
+import Button from "../common/Button";
 import SocialHome from "./HomeSocial";
 
 const HomeContent = () => {

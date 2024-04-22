@@ -1,4 +1,4 @@
-import Title from "../common-component/Heading";
+import Title from "../common/Title";
 import Works from "./WorkContent";
 
 const Work = () => {

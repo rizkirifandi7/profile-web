@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { IoCode } from "react-icons/io5";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
-import Title from "../common-component/Heading";
+import Title from "../common/Title";
 import ServiceContent from "./ServiceContent";
 
 const Service = () => {
