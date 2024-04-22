@@ -7,7 +7,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
 
 import { useContext } from "react";
-import { DarkModeContext } from "../../useContext/DarkModeContext";
+import { DarkModeContext } from "../../hooks/useDarkModeContext";
 
 const NavbarMenu = [
 	{ title: "Home", href: "home" },

@@ -14,6 +14,7 @@ export default {
 				initial: "initial",
 				three: "repeat(3, 140px)",
 				threeonefr: "repeat(3, 1fr)",
+				twoservices: "repeat(2, 270px)",
 			},
 			gridColumn: {
 				onethree: "1/3",
@@ -76,4 +77,3 @@ export default {
 	},
 	plugins: [],
 };
-

@@ -1,10 +1,10 @@
-import { dataleftFE, datarightFE } from "./DataSkills";
+import { dataleftFE, datarightFE } from "./skills-data";
 
 const Frontend = () => {
 	return (
 		<div className="bg-white dark:bg-black py-8 px-16 rounded-2xl border dark:border-none w-full md:w-fit">
 			<p className="text-center mb-6 font-medium text-base dark:text-title-white">Frontend Developer</p>
-			<div className="flex gap-10 justify-center items-center">
+			<div className="flex gap-10 justify-center items-start">
 				<div className="flex flex-col gap-5 dark:text-title-white">
 					{dataleftFE.map((item, index) => {
 						return (

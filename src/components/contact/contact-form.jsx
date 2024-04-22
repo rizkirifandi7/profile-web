@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "../reusable_ui/Button";
-import Label from "../reusable_ui/Label";
+import Button from "../common-component/button";
+import Label from "../common-component/label";
 
 const ContactForm = () => {
 	const form = useRef();
@@ -23,7 +23,7 @@ const ContactForm = () => {
 					<input
 						type="text"
 						name="name"
-						className="absolute top-0 left-0 w-full h-full border-2  text-text bg-body dark:bg-surface-100 outline-none rounded-xl p-6 z-[1]"
+						className="absolute top-0 left-0 w-full h-full border-2  text-text bg-body dark:bg-surface-100 dark:text-title-white outline-none rounded-xl p-6 z-[1]"
 						placeholder="Insert your name"
 					/>
 				</div>

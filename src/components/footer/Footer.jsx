@@ -1,5 +1,5 @@
-import FooterMenu from "./FooterMenu";
-import FooterSocial from "./FooterSocial";
+import FooterMenu from "./footer-menu";
+import FooterSocial from "./footer-social";
 
 const Footer = () => {
 	return (

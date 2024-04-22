@@ -1,5 +1,5 @@
-import DataHome from "./DataHome";
-import SocialHome from "./SocialHome";
+import HomeContent from "./home-content";
+import SocialHome from "./home-social";
 
 const Home = () => {
 	return (
@@ -12,7 +12,7 @@ const Home = () => {
 						<div className="bg-profile bg-no-repeat bg-center bg-cover bg-gray-900 shadow-profile w-[200px] h-[200px] md:w-[300px] md:h-[300px] animate-profile"></div>
 					</div>
 
-					<DataHome />
+					<HomeContent />
 				</div>
 			</div>
 		</section>

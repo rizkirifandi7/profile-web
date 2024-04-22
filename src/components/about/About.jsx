@@ -1,6 +1,6 @@
-import Button from "../reusable_ui/Button";
-import Title from "../reusable_ui/Title";
-import BoxContent from "./BoxContent";
+import Button from "../common-component/button";
+import Title from "../common-component/heading";
+import BoxContent from "./box-content";
 
 const About = () => {
 	return (
@@ -14,8 +14,8 @@ const About = () => {
 					<BoxContent />
 
 					<p className=" text-text text-center pt-6 md:py-4 md:text-left dark:text-gray-300">
-						Undergraduate informatics engineering student. Detailed-oriented, responsible, and passionate with expertise
-						in Web Developer.
+						A web developer-focused programmer. Detailed-oriented, responsible, and passionate with expertise in Web
+						Developer.
 					</p>
 
 					<div className="text-center mt-8 md:text-left md:mt-2">

@@ -1,5 +1,5 @@
-import Title from "../reusable_ui/Title";
-import Works from "./Works";
+import Title from "../common-component/heading";
+import Works from "./work-content";
 
 const Work = () => {
 	return (

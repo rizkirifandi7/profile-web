@@ -30,12 +30,12 @@ export const datarightBE = [
 export const dataleftFE = [
   {
     icon: <LuBadgeCheck />,
-    title: "HTML",
+    title: "Next JS",
     value: "Proficient",
   },
   {
     icon: <LuBadgeCheck />,
-    title: "CSS",
+    title: "Vue JS",
     value: "Proficient",
   },
   {
@@ -49,11 +49,6 @@ export const datarightFE = [
   {
     icon: <LuBadgeCheck />,
     title: "React",
-    value: "Proficient",
-  },
-  {
-    icon: <LuBadgeCheck />,
-    title: "NextJS",
     value: "Proficient",
   },
   {
