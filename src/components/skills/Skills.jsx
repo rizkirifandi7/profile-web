@@ -1,6 +1,6 @@
-import Title from "../common-component/heading";
-import Backend from "./skills-backend";
-import Frontend from "./skills-frontend";
+import Title from "../common-component/Heading";
+import Backend from "./SkillsBackend";
+import Frontend from "./SkillsFrontend";
 
 const Skills = () => {
 	return (

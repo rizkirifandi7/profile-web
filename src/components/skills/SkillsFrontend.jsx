@@ -1,4 +1,4 @@
-import { dataleftFE, datarightFE } from "./skills-data";
+import { dataleftFE, datarightFE } from "./SkillsData";
 
 const Frontend = () => {
 	return (

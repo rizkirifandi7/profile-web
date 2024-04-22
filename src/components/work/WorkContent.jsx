@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { projectsData, ProjectsNav } from "./work-data";
-import WorksItems from "./work-card";
+import { projectsData, ProjectsNav } from "./WorkData";
+import WorksItems from "./WorkCard";
 
 const Works = () => {
 	const [item, setItem] = useState({ name: "all" });

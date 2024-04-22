@@ -1,6 +1,6 @@
-import Title from "../common-component/heading";
-import ContactForm from "./contact-form";
-import ContactInfo from "./contact-info";
+import Title from "../common-component/Heading";
+import ContactForm from "./ContactForm";
+import ContactInfo from "./ContactInfo";
 
 const Contact = () => {
 	return (

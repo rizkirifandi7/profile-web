@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { IoArrowForward } from "react-icons/io5";
 
-import { DataWebDevelopment, DataWebDesigner } from "./service-data";
-import ServiceModal from "./service-modal";
+import { DataWebDevelopment, DataWebDesigner } from "./ServiceData";
+import ServiceModal from "./ServiceModal";
 
 const ServiceContent = ({ maintitle, subtitle, iconmain, onClick, toggleState, toggleTab }) => {
 	return (

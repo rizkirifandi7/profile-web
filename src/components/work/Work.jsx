@@ -1,5 +1,5 @@
-import Title from "../common-component/heading";
-import Works from "./work-content";
+import Title from "../common-component/Heading";
+import Works from "./WorkContent";
 
 const Work = () => {
 	return (

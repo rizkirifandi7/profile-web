@@ -1,4 +1,4 @@
-import { dataleftBE, datarightBE } from "./skills-data";
+import { dataleftBE, datarightBE } from "./SkillsData";
 
 const Backend = () => {
 	return (

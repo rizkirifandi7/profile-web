@@ -1,6 +1,6 @@
-import Button from "../common-component/button";
-import Title from "../common-component/heading";
-import BoxContent from "./box-content";
+import Button from "../common-component/Button";
+import Title from "../common-component/Heading";
+import BoxContent from "./BoxContent";
 
 const About = () => {
 	return (

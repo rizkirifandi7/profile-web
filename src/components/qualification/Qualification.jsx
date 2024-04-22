@@ -2,9 +2,9 @@ import { useState } from "react";
 import { MdWorkOutline } from "react-icons/md";
 import { IoSchoolOutline } from "react-icons/io5";
 import { MdOutlineDateRange } from "react-icons/md";
-import LeftQualification from "./qualification-left";
-import RightQualification from "./qualification-right";
-import Title from "../common-component/heading";
+import LeftQualification from "./QualificationLeft";
+import RightQualification from "./QualificationRight";
+import Title from "../common-component/Heading";
 
 const Qualification = () => {
 	const [toggleState, setToggleState] = useState(1);

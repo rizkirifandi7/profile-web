@@ -1,5 +1,5 @@
-import HomeContent from "./home-content";
-import SocialHome from "./home-social";
+import HomeContent from "./HomeContent";
+import SocialHome from "./HomeSocial";
 
 const Home = () => {
 	return (

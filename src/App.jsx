@@ -4,14 +4,14 @@ import "aos/dist/aos.css";
 
 import { DarkModeContext } from "./hooks/useDarkModeContext";
 import About from "./components/about/About";
-import Contact from "./components/contact/contact";
-import Footer from "./components/footer/footer";
-import Header from "./components/navbar/navbar";
-import Home from "./components/home/home";
-import Qualification from "./components/qualification/qualification";
-import Service from "./components/serve/service";
-import Skills from "./components/skills/skills";
-import Work from "./components/work/work";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import Header from "./components/navbar/Navbar";
+import Home from "./components/home/Home";
+import Qualification from "./components/qualification/Qualification";
+import Service from "./components/serve/Service";
+import Skills from "./components/skills/Skills";
+import Work from "./components/work/Work";
 
 function App() {
 	const [darkMode, setDarkMode] = useState(false);

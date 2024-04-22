@@ -1,5 +1,5 @@
-import Button from "../common-component/button";
-import SocialHome from "./home-social";
+import Button from "../common-component/Button";
+import SocialHome from "./HomeSocial";
 
 const HomeContent = () => {
 	return (

@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import { IoCode } from "react-icons/io5";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
-import Title from "../common-component/heading";
-import ServiceContent from "./service-content";
+import Title from "../common-component/Heading";
+import ServiceContent from "./ServiceContent";
 
 const Service = () => {
 	const [toggleState, setToggleState] = useState(0);
