@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { DarkModeContext } from "./hooks/useDarkModeContext";
-import About from "./components/about/about";
+import About from "./components/about/About";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import Header from "./components/navbar/navbar";
