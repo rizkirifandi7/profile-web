@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { DarkModeContext } from "./hooks/useDarkModeContext";
+import { DarkModeContext } from "./hooks/DarkModeContext";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";

@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { MdWorkOutline } from "react-icons/md";
-import { IoSchoolOutline } from "react-icons/io5";
-import { MdOutlineDateRange } from "react-icons/md";
+import {
+	MdWorkOutline,
+	MdOutlineDateRange,
+	MdOutlineSchool,
+} from "react-icons/md";
 import LeftQualification from "./QualificationLeft";
 import RightQualification from "./QualificationRight";
 import Title from "../common/Title";
@@ -14,23 +16,34 @@ const Qualification = () => {
 	};
 
 	return (
-		<section className="max-w-container mx-auto p-4 my-56 w-full" id="qualification">
+		<section
+			className="max-w-container mx-auto p-4 my-56 w-full"
+			id="qualification"
+		>
 			<Title maintitle={"Qualification"} subtitle={"My personal journey"} />
 
 			<div className="max-w-[768px] mx-auto">
 				<div className="flex justify-center gap-8 mb-8">
 					<div
-						className={toggleState === 1 ? "font-semibold text-h3" : "font-medium text-h3"}
+						className={
+							toggleState === 1
+								? "font-semibold text-h3 border-b p-2 border-title dark:border-title-white"
+								: "font-medium text-h3 p-2"
+						}
 						onClick={() => toggleTab(1)}
 					>
 						<div className="flex items-center gap-2 text-title dark:text-title-white cursor-pointer">
-							<IoSchoolOutline />
+							<MdOutlineSchool className="text-2xl" />
 							Education
 						</div>
 					</div>
 
 					<div
-						className={toggleState === 2 ? "font-semibold text-h3" : "font-medium text-h3"}
+						className={
+							toggleState === 2
+								? "font-semibold text-h3 border-b p-2 border-title dark:border-title-white"
+								: "font-medium text-h3 p-2"
+						}
 						onClick={() => toggleTab(2)}
 					>
 						<div className="flex items-center gap-2 text-title dark:text-title-white cursor-pointer">
