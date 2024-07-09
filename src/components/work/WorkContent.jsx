@@ -27,15 +27,17 @@ const Works = () => {
 			<div className="flex justify-center items-center gap-3 mb-8">
 				{ProjectsNav.map((item, index) => {
 					return (
-						<span
+						<button
+							key={item.id}
 							onClick={(e) => {
 								handleClick(e, index);
 							}}
-							className={`${active === index ? "bg-title text-white" : ''} cursor-pointer text-title dark:text-title-white font-semibold text-base px-3 py-2 capitalize rounded-md hover:bg-title hover:text-white transition duration-300 ease-in-out`}
-							key={index}
+							className={`${
+								active === index ? "border-b-2 border-title text-title dark:border-title-white border-opacity-50" : ""
+							} cursor-pointer text-title dark:text-title-white font-semibold text-base px-3 py-2 capitalize `}
 						>
 							{item.name}
-						</span>
+						</button>
 					);
 				})}
 			</div>

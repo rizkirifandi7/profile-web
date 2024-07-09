@@ -51,10 +51,10 @@ const Header = () => {
 							: "hidden"
 					}`}
 				>
-					{NavbarMenu.map((menu, index) => {
+					{NavbarMenu.map((menu) => {
 						return (
 							<Link
-								key={index}
+								key={menu.href}
 								offset={-100}
 								to={menu.href}
 								onClick={() => {
@@ -82,7 +82,7 @@ const Header = () => {
 						)}
 					</button>
 				</div>
-				<div
+				<button
 					className="md:hidden lg:hidden pr-4 md:pr-0"
 					onClick={toggleDropdown}
 				>
@@ -91,7 +91,7 @@ const Header = () => {
 					) : (
 						<RxHamburgerMenu className="text-2xl font-semibold dark:text-white" />
 					)}
-				</div>
+				</button>
 			</div>
 		</nav>
 	);

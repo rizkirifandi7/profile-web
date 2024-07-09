@@ -24,10 +24,10 @@ const Qualification = () => {
 
 			<div className="max-w-[768px] mx-auto">
 				<div className="flex justify-center gap-8 mb-8">
-					<div
+					<button
 						className={
 							toggleState === 1
-								? "font-semibold text-h3 border-b p-2 border-title dark:border-title-white"
+								? "font-semibold text-h3 border-b-2 border-opacity-50 p-2 border-title dark:border-title-white"
 								: "font-medium text-h3 p-2"
 						}
 						onClick={() => toggleTab(1)}
@@ -36,12 +36,12 @@ const Qualification = () => {
 							<MdOutlineSchool className="text-2xl" />
 							Education
 						</div>
-					</div>
+					</button>
 
-					<div
+					<button
 						className={
 							toggleState === 2
-								? "font-semibold text-h3 border-b p-2 border-title dark:border-title-white"
+								? "font-semibold text-h3 border-b-2 border-opacity-50 p-2 border-title dark:border-title-white"
 								: "font-medium text-h3 p-2"
 						}
 						onClick={() => toggleTab(2)}
@@ -50,7 +50,7 @@ const Qualification = () => {
 							<MdWorkOutline />
 							Experience
 						</div>
-					</div>
+					</button>
 				</div>
 
 				<div className="grid grid-cols-initial md:grid-cols-custom justify-center mx-4">

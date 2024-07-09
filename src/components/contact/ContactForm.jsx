@@ -20,7 +20,12 @@ const ContactForm = () => {
 		e.preventDefault();
 
 		try {
-			await emailjs.sendForm("service_bg6oi4n", "template_gnadhbm", form.current, "X-ZemrM9dNqWz9C-F");
+			await emailjs.sendForm(
+				"service_bg6oi4n",
+				"template_gnadhbm",
+				form.current,
+				"X-ZemrM9dNqWz9C-F"
+			);
 			setShowSuccess(true);
 			setTimeout(() => setShowSuccess(false), 2000); // hide the message after 3 seconds
 		} catch (error) {
@@ -32,7 +37,9 @@ const ContactForm = () => {
 
 	return (
 		<div className="flex flex-col items-center">
-			<h3 className="text-center text-xl font-medium mb-6 dark:text-title-white">Write me your project</h3>
+			<h3 className="text-center text-xl font-medium mb-6 dark:text-title-white">
+				Write me your project
+			</h3>
 
 			<SuccessMessage show={showSuccess} />
 
@@ -67,7 +74,7 @@ const ContactForm = () => {
 						placeholder="Write your project"
 					></textarea>
 				</div>
-				<button className="bg-title dark:bg-white dark:text-black dark:font-semibold px-6 py-3 cursor-pointer rounded-md text-white dark:hover:bg-slate-200 hover:bg-titletwo w-fit">
+				<button className="bg-title dark:bg-white dark:text-black dark:font-semibold  px-6 py-3 cursor-pointer rounded-md text-white dark:hover:bg-slate-200 hover:bg-titletwo w-full md:w-fit">
 					Send Message
 				</button>
 			</form>
@@ -76,3 +83,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+	

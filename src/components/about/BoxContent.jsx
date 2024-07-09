@@ -23,14 +23,16 @@ const data = [
 const BoxContent = () => {
 	return (
 		<div className="grid  grid-cols-3 md:grid-cols-three justify-center md:justify-start gap-2 md:gap-4 items-center  ">
-			{data.map((item, index) => {
+			{data.map((item) => {
 				return (
 					<div
-						key={index}
+						key={item.title}
 						className="flex flex-col justify-center items-center border dark:border-none py-4 md:p-box-large rounded-xl gap-2 bg-white dark:bg-black"
 					>
 						<p className="text-2xl dark:text-gray-200">{item.icon}</p>
-						<h3 className="text-sm font-semibold dark:text-gray-200">{item.title}</h3>
+						<h3 className="text-sm font-semibold dark:text-gray-200">
+							{item.title}
+						</h3>
 						<p className="text-xs text-text dark:text-gray-200">{item.value}</p>
 					</div>
 				);
